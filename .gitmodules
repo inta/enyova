@@ -1,0 +1,12 @@
+[submodule "enyo"]
+	path = src/enyo
+	url = git@github.com:enyojs/enyo.git
+	branch = master
+[submodule "layout"]
+	path = src/lib/layout
+	url = git@github.com:enyojs/layout.git
+	branch = master
+[submodule "onyx"]
+	path = src/lib/onyx
+	url = git@github.com:enyojs/onyx.git
+	branch = master

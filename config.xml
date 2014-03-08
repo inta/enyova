@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="com.example.enyova" version="1.0.0"
+	xmlns="http://www.w3.org/ns/widgets"
+	xmlns:cdv="http://cordova.apache.org/ns/1.0"
+	xmlns:gap="http://phonegap.com/ns/1.0">
+
+	<name>Enyo Cordova Bootplate</name>
+	<description>
+		Template for hybrid applications with Enyo and Cordova.
+	</description>
+	<author email="mail@example.com" href="http://example.com">
+		Example Author
+	</author>
+
+	<!--
+		Enable individual API permissions here.
+		The "device" permission is required for the 'deviceready' event.
+	-->
+	<feature name="http://api.phonegap.com/1.0/device"/>
+
+	<feature name="App">
+		<param name="android-package" value="org.apache.cordova.App"/>
+	</feature>
+
+	<!--
+		If you do not want any permissions to be added to your app, add the
+		following tag to your config.xml; you will still have the INTERNET
+		permission on your app, which PhoneGap requires.
+	-->
+	<preference name="permissions" value="none"/>
+
+	<!-- all: hides the status bar at the top of the screen -->
+	<preference name="Fullscreen" value="true"/>
+
+	<!-- all: default means both landscape and portrait are enabled -->
+	<preference name="Orientation" value="default"/>
+
+	<!-- all: possible values handset, tablet, or universal -->
+	<preference name="target-device" value="universal"/>
+
+	<!-- multi: disable feedback when users scroll past the beginning or end of content -->
+	<preference name="DisallowOverscroll" value="false"/>
+
+	<!-- android (https://github.com/kkirby/Cordova-Config-Properties/blob/master/android.xml) -->
+	<preference name="SplashScreen" value="splash"/><!-- filename without extension, default splash -->
+	<preference name="SplashScreenDelay" value="3000"/>
+	<preference name="KeepRunning" value="true"/>
+	<preference name="AndroidPersistentFileLocation" value="Internal"/>
+	<preference name="LoadUrlTimeoutValue" value="20000"/>
+	<preference name="InAppBrowserStorageEnabled" value="true"/>
+	<!--<preference name="LoadingDialog" value="My Title,My Message"/>-->
+	<!--<preference name="LoadingPageDialog" value="My Title,My Message"/>-->
+	<!--<preference name="ErrorUrl" value="myErrorPage.html"/>-->
+	<preference name="ShowTitle" value="false"/>
+	<preference name="LogLevel" value="ERROR"/><!-- ERROR, WARN, INFO, DEBUG, VERBOSE -->
+
+	<!-- ios (https://github.com/kkirby/Cordova-Config-Properties/blob/master/ios.xml) -->
+	<preference name="EnableViewportScale" value="false"/>
+	<preference name="webviewbounce" value="true"/>
+	<preference name="prerendered-icon" value="true"/>
+	<preference name="stay-in-webview" value="false"/>
+	<preference name="detect-data-types" value="true"/>
+	<preference name="exit-on-suspend" value="false"/>
+	<preference name="ShowSplashScreenSpinner" value="true"/>
+	<preference name="AutoHideSplashScreen" value="false"/>
+	<preference name="FadeSplashScreen" value="true"/>
+	<preference name="FadeSplashScreenDuration" value="2"/>
+	<preference name="MediaPlaybackRequiresUserAction" value="false"/>
+	<preference name="AllowInlineMediaPlayback" value="false"/>
+	<preference name="BackupWebStorage" value="cloud"/><!-- cloud, local, none -->
+	<preference name="iosPersistentFileLocation" value="Library"/>
+	<preference name="TopActivityIndicator" value="gray"/><!-- gray, white, whiteLarge -->
+	<preference name="KeyboardDisplayRequiresUserAction" value="true"/>
+	<preference name="SuppressesIncrementalRendering" value="false"/>
+	<preference name="GapBetweenPages" value="0"/>
+	<preference name="PageLength" value="0"/>
+	<preference name="PaginationBreakingMode" value="page"/><!-- page, column -->
+	<preference name="PaginationMode" value="unpaginated"/><!-- unpaginated, leftToRight, topToBottom, bottomToTop, rightToLeft -->
+	<preference name="UIWebViewDecelerationSpeed" value="normal"/><!-- normal, fast -->
+
+	<!-- blackberry -->
+	<preference name="disable-cursor" value="false"/>
+
+	<!-- Define app icon for each platform. -->
+	<icon src="src/icon.png" />
+	<icon src="src/res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi"/>
+	<icon src="src/res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi"/>
+	<icon src="src/res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:density="hdpi"/>
+	<icon src="src/res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:density="xhdpi"/>
+	<icon src="src/res/icon/blackberry/icon-80.png" gap:platform="blackberry"/>
+	<icon src="src/res/icon/blackberry/icon-80.png" gap:platform="blackberry" gap:state="hover"/>
+	<icon src="src/res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57"/>
+	<icon src="src/res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72"/>
+	<icon src="src/res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114"/>
+	<icon src="src/res/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144"/>
+	<icon src="src/res/icon/webos/icon-64.png" gap:platform="webos"/>
+	<icon src="src/res/icon/windows-phone/icon-48.png" gap:platform="winphone"/>
+	<icon src="src/res/icon/windows-phone/icon-173.png" gap:platform="winphone" gap:role="background"/>
+
+	<!-- Define app splash screen for each platform. -->
+	<gap:splash src="src/res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:density="ldpi"/>
+	<gap:splash src="src/res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:density="mdpi"/>
+	<gap:splash src="src/res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:density="hdpi"/>
+	<gap:splash src="src/res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi"/>
+	<gap:splash src="src/res/screen/blackberry/screen-225.png" gap:platform="blackberry"/>
+	<gap:splash src="src/res/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480"/>
+	<gap:splash src="src/res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960"/>
+	<gap:splash src="src/res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
+	<gap:splash src="src/res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
+	<gap:splash src="src/res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
+
+	<content src="index.html"/>
+	<access origin="*"/>
+</widget>

@@ -1,0 +1,11 @@
+{
+	"platforms": [
+		"android"
+	],
+	"plugins": [
+		"org.apache.cordova.device",
+		"org.apache.cordova.dialogs",
+		"org.apache.cordova.network-information",
+		"org.apache.cordova.splashscreen"
+	]
+}

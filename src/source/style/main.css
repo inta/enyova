@@ -1,0 +1,51 @@
+/* = general
+----------------------------------------------------------------------------- */
+.busy-scrim {
+	background: rgba(0, 0, 0, .65);
+}
+
+.busy-scrim .spinner {
+	overflow: hidden;
+	margin: 50% auto 0;
+	-webkit-animation-name: spinner;
+	animation-name: spinner;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-background-origin: padding-box;
+	background-origin: padding-box;
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 52px;
+	height: 52px;
+	background: url(../../assets/elements/loader.png) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.busy-scrim .message {
+	margin: 2em;
+	text-align: center;
+}
+
+@-webkit-keyframes spinner {
+	0% {
+		-webkit-transform: rotateZ(0deg);
+	}
+	100% {
+		-webkit-transform: rotateZ(359deg);
+	}
+}
+
+@keyframes spinner {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(359deg);
+	}
+}
