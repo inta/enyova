@@ -19,6 +19,10 @@ You need the following software:
 
 Setup
 -----
+Clone the repo: `git clone git@github.com:inta/enyova.git`
+
+Initialize the submodules: `git submodule update --init`
+
 Use `node setup.js` to initialize your project (or `./setup.js` if file is executable). *platforms*, *plugins* and *www* folders will be created and **platforms** and **plugins** listed in *project.json* will be added to your project.
 
 You can manually add platforms and plugins later using cordova-cli:
